@@ -17,19 +17,19 @@ export const SearchCard = () => {
   return (
     <div
       style={{
-        marginLeft: 300,
+        marginLeft: 130,
         marginTop: 34,
         marginRight: 100,
         display: "flex",
         flexDirection: "row",
-        overflow: "hidden",
+        justifyContent: "space-around",
       }}
     >
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ marginLeft: 165, marginBottom: 30, marginTop: 64 }}>
           <Typography variant="h4">Pesquise os produtos</Typography>
         </div>
-        <div style={{ marginLeft: 165, marginTop: 31 }}>
+        <div style={{ marginLeft: 165, marginTop: 31, marginBottom: 80 }}>
           <InputLabel htmlFor="filled-adornment-password">Pesquisar</InputLabel>
           <Input
             sx={{ width: 300 }}
@@ -49,8 +49,8 @@ export const SearchCard = () => {
           />
         </div>
       </div>
-      <div style={{ position: "absolute", right: 300 }}>
-        <img style={{ display: "block" }} src={require("../assets/3.png")} />
+      <div>
+        <img src={require("../assets/3.png")} />
       </div>
     </div>
   );
